@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf.armoury", "src\wpf.armoury\wpf.armoury.csproj", "{4CE5562E-3DCF-444D-92F0-D1762BAA235C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wpf.armoury.demo", "src\wpf.armoury.demo\wpf.armoury.demo.csproj", "{770AB214-6F2F-4181-80CF-475C60ED2160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CE5562E-3DCF-444D-92F0-D1762BAA235C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE5562E-3DCF-444D-92F0-D1762BAA235C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE5562E-3DCF-444D-92F0-D1762BAA235C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE5562E-3DCF-444D-92F0-D1762BAA235C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{770AB214-6F2F-4181-80CF-475C60ED2160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{770AB214-6F2F-4181-80CF-475C60ED2160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{770AB214-6F2F-4181-80CF-475C60ED2160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{770AB214-6F2F-4181-80CF-475C60ED2160}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EA9E130-949E-4004-81F2-5A9577F5BF9F}
+	EndGlobalSection
+EndGlobal
