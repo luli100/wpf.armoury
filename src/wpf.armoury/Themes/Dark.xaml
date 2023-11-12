@@ -1,9 +1,29 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <Color x:Key="ControlBorderBrushColor">#88FFFFFF</Color>
-    <Color x:Key="ControlBackgroundColor">#FF202020</Color>
+    <Color x:Key="ControlBorderBrushColor">#88FF3C68</Color>
+    <Color x:Key="ControlBackgroundColor">#88FF7130</Color>
     <SolidColorBrush x:Key="ControlBorderBrush"
                      Color="{StaticResource ControlBorderBrushColor}" />
     <SolidColorBrush x:Key="ControlBackground"
                      Color="{StaticResource ControlBackgroundColor}" />
+    <Color x:Key="ControlStrokeColorDefault">#88300A6E</Color>
+    <Color x:Key="ControlStrokeColorSecondary">#88FF2D2B</Color>
+    <Color x:Key="ControlFillColorDefault">#88C10A28</Color>
+    <LinearGradientBrush x:Key="ControlElevationBorderBrush"
+                         MappingMode="Absolute"
+                         StartPoint="0,0"
+                         EndPoint="0,3">
+        <LinearGradientBrush.RelativeTransform>
+            <ScaleTransform CenterY="0.5"
+                            ScaleY="-1" />
+        </LinearGradientBrush.RelativeTransform>
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0.33"
+                          Color="{StaticResource ControlStrokeColorSecondary}" />
+            <GradientStop Offset="1.0"
+                          Color="{StaticResource ControlStrokeColorDefault}" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="ButtonBackground"
+                     Color="{StaticResource ControlFillColorDefault}" />
 </ResourceDictionary>

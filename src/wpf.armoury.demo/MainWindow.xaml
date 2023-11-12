@@ -8,9 +8,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <armoury:IPAddrBox BorderThickness="1" Height="32" Width="128"/>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <armoury:IPAddrBox BorderThickness="1" Height="32" Width="192" x:Name="ipaddrbox"/>
+        <TextBlock Text="{Binding ElementName=ipaddrbox, Path=IPAddr}" 
+                   Grid.Row="1"/>
         <Button VerticalAlignment="Bottom"
                 Height="32"
-                Click="Button_Click"/>
+                Click="Button_Click"
+                Grid.Row="2"/>
     </Grid>
 </Window>

@@ -9,9 +9,9 @@
         <Setter Property="OverridesDefaultStyle"
                 Value="True" />
         <Setter Property="Background"
-                Value="{DynamicResource ControlBackground}" />
+                Value="{DynamicResource ButtonBackground}" />
         <Setter Property="BorderBrush"
-                Value="{DynamicResource ControlBorderBrush}" />
+                Value="{DynamicResource ControlElevationBorderBrush}" />
         <Setter Property="BorderThickness"
                 Value="1" />
         <Setter Property="Template">
@@ -20,7 +20,75 @@
                     <Border BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Background="{TemplateBinding Background}">
-                        
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition MinWidth="36"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition MinWidth="36"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition MinWidth="36"/>
+                                <ColumnDefinition Width="10"/>
+                                <ColumnDefinition MinWidth="36"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="0" 
+                                     x:Name="Part1TextBox"
+                                     Background="Transparent"
+                                     BorderThickness="0"
+                                     VerticalContentAlignment="Center"
+                                     HorizontalContentAlignment="Center"
+                                     VerticalAlignment="Stretch"
+                                     HorizontalAlignment="Stretch"
+                                     Foreground="{TemplateBinding Foreground}"
+                                     Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IPAddrBox}}, Path=Part1, UpdateSourceTrigger=PropertyChanged}"/>
+                            <TextBox Grid.Column="2"
+                                     x:Name="Part2TextBox"
+                                     Background="Transparent" 
+                                     BorderThickness="0"
+                                     VerticalContentAlignment="Center"
+                                     HorizontalContentAlignment="Center"
+                                     VerticalAlignment="Stretch"
+                                     HorizontalAlignment="Stretch"
+                                     Foreground="{TemplateBinding Foreground}"
+                                     Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IPAddrBox}}, Path=Part2, UpdateSourceTrigger=PropertyChanged}" />
+                            <TextBox Grid.Column="4"
+                                     x:Name="Part3TextBox"
+                                     Background="Transparent"
+                                     BorderThickness="0"
+                                     VerticalContentAlignment="Center"
+                                     HorizontalContentAlignment="Center"
+                                     VerticalAlignment="Stretch"
+                                     HorizontalAlignment="Stretch"
+                                     Foreground="{TemplateBinding Foreground}"
+                                     Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IPAddrBox}}, Path=Part3, UpdateSourceTrigger=PropertyChanged}" />
+                            <TextBox Grid.Column="6"
+                                     x:Name="Part4TextBox"
+                                     Background="Transparent"
+                                     BorderThickness="0"
+                                     VerticalContentAlignment="Center"
+                                     HorizontalContentAlignment="Center"
+                                     VerticalAlignment="Stretch"
+                                     HorizontalAlignment="Stretch"
+                                     Foreground="{TemplateBinding Foreground}"
+                                     Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IPAddrBox}}, Path=Part4, UpdateSourceTrigger=PropertyChanged}" />
+                            <TextBlock Grid.Column="1"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Bottom"
+                                       Text="."
+                                       FontSize="20" 
+                                       Foreground="{TemplateBinding Foreground}"/>
+                            <TextBlock Grid.Column="3"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Bottom"
+                                       Text="."
+                                       FontSize="20"
+                                       Foreground="{TemplateBinding Foreground}"/>
+                            <TextBlock Grid.Column="5"
+                                       HorizontalAlignment="Center"
+                                       VerticalAlignment="Bottom"
+                                       Text="."
+                                       FontSize="20"
+                                       Foreground="{TemplateBinding Foreground}" />
+                        </Grid>
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
