@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf.armoury.demo"
+        xmlns:armoury="clr-namespace:wpf.armoury.Controls;assembly=wpf.armoury"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <armoury:IPAddrBox BorderThickness="1" Height="32" Width="128"/>
+        <Button VerticalAlignment="Bottom"
+                Height="32"
+                Click="Button_Click"/>
     </Grid>
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using wpf.armoury.Appearance;
 
 namespace wpf.armoury.demo
 {
@@ -23,6 +24,18 @@ namespace wpf.armoury.demo
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (ApplicationThemeManager.CurrentTheme == ApplicationTheme.Light)
+            {
+                ApplicationThemeManager.Apply(ApplicationTheme.Dark);
+            }
+            else
+            {
+                ApplicationThemeManager.Apply(ApplicationTheme.Light);
+            }
         }
     }
 }

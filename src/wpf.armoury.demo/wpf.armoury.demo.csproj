@@ -7,4 +7,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\wpf.armoury\wpf.armoury.csproj" />
+  </ItemGroup>
+
 </Project>
